@@ -1,0 +1,31 @@
+.container {
+	& > .backdrop {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 700;
+
+		background-color: rgba(0, 0, 0, 0.61);
+	}
+	& > .modal__body {
+		max-width: 600px;
+		border-radius: 2px;
+		position: fixed;
+		top: 15%;
+		left: 30px;
+		right: 30px;
+		background-color: #f4f5f7;
+		z-index: 800;
+	}
+}
+
+@media screen and (min-width: 43em) {
+	.container {
+		& > .modal__body {
+			top: 15%;
+			left: 25%;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.container {
+	// position: absolute;
+
+	& > .items {
+		display: flex;
+		align-items: center;
+		gap: 1em;
+		cursor: pointer;
+		margin-top: 0.5em;
+		height: 35px;
+		color: hsl(202, 98%, 33%);
+		border-radius: 2px;
+		padding-left: 0.5em;
+
+		& > p {
+			font-weight: 700;
+			font-size: 0.8rem;
+		}
+	}
+	& > .items:hover {
+		background-color: hsla(202, 98%, 33%, 0.151);
+	}
+}
+
+.currentTab {
+	background-color: hsla(202, 98%, 33%, 0.089);
+}

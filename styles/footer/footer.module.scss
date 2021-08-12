@@ -1,0 +1,10 @@
+.container {
+	margin-top: 15em;
+	text-align: center;
+	& > p {
+		& > a {
+			padding-left: 0.5em;
+			text-decoration: underline;
+		}
+	}
+}

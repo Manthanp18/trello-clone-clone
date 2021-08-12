@@ -1,0 +1,25 @@
+.main__container {
+	margin-top: 3em;
+
+	& > .sidebar__container {
+		display: none;
+		width: 230px;
+		position: fixed;
+		z-index: 1;
+		left: 140px;
+	}
+	& > .projects__container {
+		margin-left: 3em;
+	}
+}
+
+@media screen and (min-width: 37.5em) {
+	.main__container {
+		& > .sidebar__container {
+			display: block;
+		}
+		& > .projects__container {
+			margin-left: 25em;
+		}
+	}
+}
