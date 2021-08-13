@@ -8,7 +8,7 @@ const SignUpJumbotron = () => {
 		<div className={styles.container}>
 			<div className={styles.left__container}>
 				<h1 className={styles.header}>
-					Fitur helps teams move work forward.
+					Tasky helps teams move work forward.
 				</h1>
 				<p className={styles.paragraph}>
 					Collaborate, manage projects, and reach new productivity

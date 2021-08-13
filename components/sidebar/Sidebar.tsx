@@ -5,30 +5,26 @@ import ProjectIcon from "../../assets/ProjectIcon";
 import HomeIcon from "../../assets/HomeIcon";
 
 interface SidebarProps {
-	currentTab: "Projects" | "Tasks" | "Home";
-	setCurrentTab: React.Dispatch<
-		React.SetStateAction<"Projects" | "Tasks" | "Home">
-	>;
+  currentTab: "Projects" | "Tasks" | "Home";
+  setCurrentTab: React.Dispatch<
+    React.SetStateAction<"Projects" | "Tasks" | "Home">
+  >;
 }
 
 const Sidebar = ({ currentTab, setCurrentTab }: SidebarProps) => {
-	return (
-		<div className={styles.container}>
-			<div
-				className={`${styles.items} ${
-					currentTab == "Projects" && styles.currentTab
-				}`}
-				onClick={() => setCurrentTab("Projects")}
-			>
-				<ProjectIcon
-					height={16}
-					width={16}
-					fill="rgba(2, 100, 157, 0.884)"
-				/>
+  return (
+    <div className={styles.container}>
+      <div
+        className={`${styles.items} ${
+          currentTab == "Projects" && styles.currentTab
+        }`}
+        onClick={() => setCurrentTab("Projects")}
+      >
+        <ProjectIcon height={16} width={16} fill="rgba(2, 100, 157, 0.884)" />
 
-				<p>Projects</p>
-			</div>
-			<div
+        <p>Projects</p>
+      </div>
+      {/* <div
 				className={`${styles.items} ${
 					currentTab == "Tasks" && styles.currentTab
 				}`}
@@ -49,9 +45,9 @@ const Sidebar = ({ currentTab, setCurrentTab }: SidebarProps) => {
 					fill="rgba(2, 100, 157, 0.884)"
 				/>
 				<p>Home</p>
-			</div>
-		</div>
-	);
+			</div> */}
+    </div>
+  );
 };
 
 export default Sidebar;
